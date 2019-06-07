@@ -119,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
                 else if(!firstNumber.getText().toString().equals("")&&secondNumber.getText().toString().equals("")){
                     Toast.makeText(MainActivity.this, "Please input second number.", Toast.LENGTH_SHORT).show();
                 }
+                else if(!firstNumber.getText().toString().equals("") && secondNumber.getText().toString().equals("0")){
+                    showAnswer.setText("ERROR : Cannot divide by 0");
+                }
                 else{
                     firstNumber.getText().toString();
                     secondNumber.getText().toString();
